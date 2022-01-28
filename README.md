@@ -44,4 +44,25 @@
     ```html
         http://localhost:9393/
     ```
+## Part II
+    
+    In Part II we are going access the CSVSERVER application with Loaded Data Using DOCKER-COMPOSE UP . Follow the below mentioned steps to access the application.
+
+- To Stop and Remove existing container
+    ```bash
+        docker stop csvsrv
+        docker rm csvsrv
+    ```
+- Run the Application by DOCKER-COMPOSE-UP using docker-compose.yaml
+    ```bash
+        docker-compose up -d
+    ```
+- Confirm Container is Up and Running
+    ```bash
+        docker ps -a
+    ```
+- Goto Web-Browser and search for the Site
+    ```html
+        http://localhost:9393/
+    ```
 
