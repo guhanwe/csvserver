@@ -17,7 +17,7 @@
     ```
 - Navigate to new working directory
     ```bash
-        cd ~/csvserver/solution
+        cd ~/csvserver/
     ```
 - Run Docker container in background with dependency options [ Port mapping (-p 9393:9300), Environment variables (-e CSVSERVER_BORDER=Orange), Container Name (--name=csvsrv), Image (infracloudio/csvserver:latest) ]. 
     ```bash
