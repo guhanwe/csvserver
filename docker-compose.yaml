@@ -1,10 +1,20 @@
 services:
-  webapp:
+  webapp1:
      image: infracloudio/csvserver:latest
      volumes:
        - ./inputFile:/csvserver/inputdata
      container_name: csvsrv
+     hostname: csvsrv
      ports:
        - 9393:9300
      environment:
        - CSVSERVER_BORDER=Orange
+  webapp2:
+     image: prom/prometheus:v2.22.0
+     volumes:
+       - ./prometheus.yml:/etc/prometheus/prometheus-new.yml
+     command: --config.file=/etc/prometheus/prometheus-new.yml --storage.tsdb.path=/prometheus --web.console.libraries=/us
+     container_name: promsrv
+     hostname: promsrv
+     ports:
+       - 9090:9090
