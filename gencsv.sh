@@ -5,7 +5,7 @@ rm -rf inputFile
 RANDOM=$$
 
 num=0  #starting number
-maxcount=10  #maximum count value 10. If need, we can increase the number
+maxcount=9  #maximum count value is 10 numbers. If need, we can increase the number
 
 while [[ ${num} -le ${maxcount} ]]
 do 
